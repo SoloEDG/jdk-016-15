@@ -34,6 +34,8 @@ export interface View {
   zoom: number;
   grid: boolean;
   wire: boolean;
+  /** 透视纸层模式：半透明显示所有纸面，允许点选被遮挡的内部折痕。 */
+  xray: boolean;
 }
 export interface Document {
   paper: Paper;

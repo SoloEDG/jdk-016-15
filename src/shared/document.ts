@@ -12,7 +12,7 @@ export function createDocument(paper: Paper, steps: Step[]): Document {
     step: 1,
     playing: false,
     speed: 1,
-    view: { yaw: -35, pitch: 50, zoom: 1, grid: true, wire: true },
+    view: { yaw: -35, pitch: 50, zoom: 1, grid: true, wire: true, xray: false },
   };
 }
 export const clamp = (n: number, min: number, max: number) =>

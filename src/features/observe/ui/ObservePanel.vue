@@ -10,7 +10,8 @@ defineProps<{ doc: Document }>();
     <div class="inspect-icon">⌘</div>
     <p>换个角度，发现纸的可能。</p>
     <span class="muted small"
-      >拖动画面自由旋转，检查相邻纸面的连接与折叠关系。</span
+      >遮挡按视线逐点精确计算，折痕只能在纸面实际可见处点选；按 X 或点击
+      ◊ 可临时透视纸层，选择被挡住的内部折痕，退出后选择与视角都会保留。</span
     >
     <div class="legend">
       <span><i :style="{ background: doc.front }"></i>正面</span

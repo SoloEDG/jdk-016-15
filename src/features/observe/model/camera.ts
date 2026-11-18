@@ -20,3 +20,11 @@ export function orbit(doc: Document, dx: number, dy: number) {
 export function zoom(doc: Document, delta: number) {
   doc.view.zoom = clamp(doc.view.zoom + delta, 0.5, 2.2);
 }
+/**
+ * 切换纸层透视模式。
+ * 仅改变显示方式：相机角度与当前折痕选择身份都不修改，
+ * 退出透视后选择与角度原样保留。
+ */
+export function toggleXray(doc: Document) {
+  doc.view.xray = !doc.view.xray;
+}
